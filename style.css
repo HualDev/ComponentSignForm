@@ -1,0 +1,121 @@
+:root{
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%); 
+    --grayishBlue: hsl(246, 25%, 77%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--red);
+    background-image: url(/images/bg-intro-mobile.png);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding: 50px 0 10px;
+    font-weight: 800;
+}
+
+p.intro{
+    color: white;
+    text-align: center;
+    padding: 0 20px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.plan{
+    background-color: var(--blue);
+    max-width: 550px;
+    height: 100px;
+    color: white;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 8px 5px rgb(241, 89, 89);
+}
+
+.user{
+    max-width: 550px;
+    height: auto3;
+    padding: 20px;
+    margin:20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 1px rgb(248, 90, 90);
+}
+
+.dates{
+    display: block;
+    padding: 15px 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    outline: 2px solid rgb(233, 229, 229);    
+}
+
+button{
+    text-transform: uppercase;
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    max-width: 400px;
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 20px auto;
+    box-shadow: 0 4px 1px rgb(84, 153, 84);
+    display: block;
+    text-align: center;
+}
+
+label{
+    color: var(--grayishBlue);
+    }
+
+a{
+    text-decoration: none;
+    color: var(--red);
+}
+
+@media(min-width:600px){
+   body{
+       background-image: url(/images/bg-intro-desktop.png);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   } 
+
+   main{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+   }
+
+   .first{
+       max-width: 50%;
+       
+   }
+
+   .second{
+       max-width: 50%;
+       
+   }
+}
