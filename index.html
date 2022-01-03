@@ -33,11 +33,15 @@
       </div>
 
       <form action="" class="user">
-      <input type="text" class="dates" placeholder="First Name">
-      <input type="text" class="dates" placeholder="Last Name">
-      <input type="email" class="dates" placeholder="Email Address">
-      <input type="password" class="dates" placeholder="Password">
-      <button>Claim your free trial </button>
+      <input type="text" id="firstName" class="dates" placeholder="First Name" required>
+      <label class="error" id="error" for="">First Name cannot be empty</label>
+      <input type="text" id="lastName" class="dates" placeholder="Last Name" required>
+      <label class="error" id="error" for="">Last name cannot be empty</label>
+      <input type="email" class="dates" placeholder="Email Address" required>
+      <label class="error" for="">looks like this is not an email</label>
+      <input type="password" class="dates" placeholder="Password" required>
+      <label class="error" for="">Password cannot be empty</label>
+      <button onclick="error()">Claim your free trial </button>
       <label for="">By clicking the button, you are agreeing to our <a href=""> Terms and Services</a></label>
       </form>
     </div>
@@ -50,5 +54,7 @@
       Coded by <a href="https://www.frontendmentor.io/profile/Hualdop">Hualdo</a>.
     </p>
   </footer>
+
+  <script src="master.js"></script>
 </body>
 </html>
