@@ -86,7 +86,7 @@ input{
     height: 40px;
 }
 
-button{
+.but{
     text-transform: uppercase;
     background-color: var(--green);
     border: none;

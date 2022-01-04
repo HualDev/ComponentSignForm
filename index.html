@@ -33,15 +33,16 @@
       </div>
 
       <form action="" class="user">
-      <input type="text" id="firstName" class="dates" placeholder="First Name" required>
-      <label class="error" id="error" for="">First Name cannot be empty</label>
+      <input type="text" id="firstName" class="dates" placeholder="First Name" >
+      <label class="error" id="errorFirstName" for="">First Name cannot be empty</label>
       <input type="text" id="lastName" class="dates" placeholder="Last Name" required>
-      <label class="error" id="error" for="">Last name cannot be empty</label>
-      <input type="email" class="dates" placeholder="Email Address" required>
-      <label class="error" for="">looks like this is not an email</label>
-      <input type="password" class="dates" placeholder="Password" required>
-      <label class="error" for="">Password cannot be empty</label>
-      <button onclick="error()">Claim your free trial </button>
+      <label class="error" id="errorLastName" for="">Last name cannot be empty</label>
+      <input type="email" id="email" class="dates" placeholder="Email Address" required>
+      <label class="error" id="errorEmail" for="">looks like this is not an email</label>
+      <input type="password" id="password" class="dates" placeholder="Password" required>
+      <label class="error" id="errorPassword" for="">Password cannot be empty</label>
+      <input class="but" type="button" value="Claim your free trial" onclick="error()">
+      <!--<button onclick="error()">Claim your free trial </button>-->
       <label for="">By clicking the button, you are agreeing to our <a href=""> Terms and Services</a></label>
       </form>
     </div>
@@ -55,6 +56,6 @@
     </p>
   </footer>
 
-  <script src="master.js"></script>
+  <script src="./master.js"></script>
 </body>
 </html>
